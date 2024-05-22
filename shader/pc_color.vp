@@ -1,0 +1,20 @@
+#version 330
+
+// input
+layout(location = 0) in vec3 point;
+layout(location = 1) in vec3 color;
+
+uniform mat4 mvpMatrix;
+uniform float pointSize;
+
+//smooth out vec3 p;
+smooth out vec3 c;
+
+void main(void){
+	c = color;
+	vec4 vertex = mvpMatrix * vec4(point,1.f);
+	gl_Position = vertex;
+	if(pointSize > 0.f){ // use glEnable(GL_PROGRAM_POINT_SIZES)
+		gl_PointSize = pointSize / vertex.w; // div(-z)
+	}
+}
