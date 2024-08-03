@@ -46,7 +46,7 @@ Pre-trained models are available [here](TODO).
 ## How to use  
 
 **Basic Control**  
-Use left button to rotate, right button to pan, and middle mouse button to zoom in and out.
+Use left mouse button to rotate, right mouse button to pan, and middle mouse mouse button to zoom in and out.
 
 **Set Current Frame**  
 Select current frame under panel `Render Setting->Frames`.  
@@ -60,7 +60,7 @@ Use the number keys to select the rendering mode, 3 for Gaussian head avatar, an
 Key C to enable/disable rendering coordinate.  
 Key T to enable/disable rendering camera trajectory.
 
-## Important hint
+## Important hints
 
 To reproduce the 370fps performance reported in the paper, please comment out ENABLE_VSYNC at line 36 and uncomment line 1810 in `FaceViewer_FLAME.cpp` and rebuild. By default, we have optimized out some unnecessary computations and enabled vsync.
 
