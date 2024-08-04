@@ -24,7 +24,7 @@ Run viewer by
 ./build/bin/FaceViewer_FLAME --dataset=DATA_PATH/params --model=MODEL_PATH
 ```
 
-The building on Windows is also possible but may require some modification to CMakeLists. Alternatively, We provide a pre-built binary [here](https://1drv.ms/u/c/592890cd0dc74114/ET5cl6p_Vo1Ekvcjrh_8JV0Bu9JzNZLstudb2kaXG48VZg).  
+The building on Windows is also possible (VS2019 + CUDA 11.8) but may require some modification to CMakeLists. Alternatively, We provide a pre-built binary [here](https://1drv.ms/u/c/592890cd0dc74114/ET5cl6p_Vo1Ekvcjrh_8JV0Bu9JzNZLstudb2kaXG48VZg).  
 
 ## Data process
 
@@ -36,12 +36,12 @@ Then run
 python scripts/extract_tensor.py -i ./data/FLAME2020/generic_model.pkl -o ./data/FLAME2020
 ```
 
-Run script to transform data format for viewer.
+Run script to transform dataset format for viewer.
 ```
 python scripts/extract_traj.py -i DATA_PATH/checkpoint -o DATA_PATH/params  
 ```
 
-Pre-trained models are available [here](TODO).
+The datasets can be found [here](https://zjueducn-my.sharepoint.com/:f:/g/personal/3140103086_zju_edu_cn/Egvkvtjac5NJg7_49vmuxysBiWYM-HRINk5un44C3SXdxw). The pre-trained models are available [here](https://zjueducn-my.sharepoint.com/:f:/g/personal/3140103086_zju_edu_cn/EhIEz1DWDgVEgdEy1pMfzNkB96Z9ldhLIMutRPQAKokVRA?e=o9JJgq).
 
 ## How to use  
 
