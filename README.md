@@ -9,7 +9,18 @@ Real-time Face Viewer for the paper "3D Gaussian Blendshapes for Head Avatar Ani
 
 ## Build
 
-We have tested building on Ubuntu 18.04 with CUDA 11.8.
+We have tested building on Ubuntu 18.04 with CUDA 11.8.  
+Requirements: 
+* An NVIDIA GPU
+* gcc/g++ 11.0 or higher
+* CMake v3.19 or higher  
+
+Install dependencies
+```
+sudo apt-get install zlib1g-dev libfreeimage3 libfreeimage-dev libglew-dev libglu1-mesa-dev libglfw3-dev
+```
+
+Then, use CMake to build the project 
 
 ```
 mkdir build
