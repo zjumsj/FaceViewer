@@ -35,7 +35,7 @@ Run viewer by
 ./build/bin/FaceViewer_FLAME --dataset=DATA_PATH/params --model=MODEL_PATH
 ```
 
-The building on Windows is also possible (VS2019 + CUDA 11.8) but may require some modification to CMakeLists. Alternatively, We provide a pre-built binary [here](https://1drv.ms/u/c/592890cd0dc74114/ET5cl6p_Vo1Ekvcjrh_8JV0Bu9JzNZLstudb2kaXG48VZg).  
+The building on Windows is also possible (VS2019 + CUDA 11.8) but may require some modification to CMakeLists. Alternatively, We provide a pre-built binary [here](https://1drv.ms/u/c/592890cd0dc74114/IQA-XJeqf1aNRJL3I64f_CVdAbvSczWS7LbnW9pGlxuPFWY).  
 
 ## Data process
 

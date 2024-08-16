@@ -142,6 +142,7 @@ namespace gaussian_splatting {
 				y[1] - dot_x_y * norm_x[1],
 				y[2] - dot_x_y * norm_x[2]
 			};
+			L = length3(norm_y);
 			norm_y[0] /= L;	norm_y[1] /= L; norm_y[2] /= L;
 			T z[3];
 			cross(norm_x, norm_y, z);
@@ -167,7 +168,7 @@ namespace gaussian_splatting {
 			T phi = acos(phi_cos);
 			T phi_sin = sin(phi);
 			T phi_factor;
-			if (phi_sin > 0.5 * eps) {
+			if (abs(phi_sin) > 0.5 * eps) {
 				phi_factor = phi / (2 * phi_sin);
 			}
 			else { // avoid div tiny number
